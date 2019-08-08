@@ -1,0 +1,297 @@
+type="text/css">
+	
+		.parent-menu.desktop {
+			height: 100%;
+			flex: initial;
+		}
+
+		.parent-menu.desktop .list-menu {
+			margin-bottom: 0px !important;
+			list-style-type: none;
+			display: flex;
+			align-items: center;
+		}
+
+		.desktop.parent-menu .parent-menu-item {
+			color: white;
+			margin: 0 10px 0 10px;
+			text-transform: uppercase;
+			position: relative;
+			min-height: 72px;
+			display: flex;
+			align-items: center;
+			cursor: pointer;
+		}
+
+		.nav-indicator {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 6px;
+			background-color: white;
+		}
+
+		.nav-padding {
+			padding: 0 10px;
+		}
+
+		.desktop.parent-menu li:last-child {
+			margin-right: 0px;
+		}
+
+		
+
+	
+		}
+
+		.parent-menu a {
+			color: white;
+		}
+
+		.desktop.parent-menu li:hover>a {
+			text-decoration: none;
+			color: #c4c4c4;
+		}
+
+		
+		.parent-menu .dropdown-menu li:hover a {
+			color: white;
+		}
+
+		#overlay {
+			position: fixed;
+			background-color: black;
+			opacity: 0.7;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 998;
+			display: none;
+			transition: 1s;
+			transition-timing-function: ease;
+		}
+
+		.mobile {
+			display: none;
+		}
+
+		#forgot-password {
+			display: none;
+		}
+
+		.checkbox-remember-me {
+			display: block;
+			position: relative;
+			padding-left: 25px;
+			margin-bottom: 12px;
+		}
+
+		.checkbox-remember-me input {
+			position: absolute;
+			opacity: 0;
+			cursor: pointer;
+			height: 0;
+			width: 0;
+		}
+
+		.checkmark {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 20px;
+			width: 20px;
+			background-color: #1e3c741f;
+		}
+
+		.checkbox-remember-me input:checked~.checkmark {
+			background-color: #3C78E8;
+		}
+
+		.checkmark:after {
+			content: "";
+			position: absolute;
+			display: none;
+		}
+
+		.checkbox-remember-me input:checked~.checkmark:after {
+			display: block;
+		}
+
+		.checkbox-remember-me .checkmark:after {
+			left: 8px;
+			top: 4px;
+			width: 5px;
+			height: 10px;
+			border: solid white;
+			border-width: 0 3px 3px 0;
+			transform: rotate(45deg);
+		}
+
+		#sign-in-div .fab {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			color: #fff;
+			overflow: hidden;
+			margin: 0 10px 0 10px;
+		}
+
+		#sign-in-div .fab img {
+			height: 100%;
+			width: 40px;
+		}
+
+		.user-dropdown-avatar {
+			overflow: hidden;
+			padding-left: 1rem;
+			cursor: pointer;
+			width: 3rem;
+			height: 2rem;
+		}
+
+		.user-dropdown-avatar img {
+			width: 2rem;
+			height: 2rem;
+			border-radius: 50%;
+		}
+
+		.dropdown-menu {
+			top: 100%;
+			position: absolute;
+			left: auto;
+			right: 0;
+			display: none;
+			flex-flow: column;
+			width: 200px;
+			padding: 0;
+			box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 10px;
+			border: none;
+			margin-top: 0.25rem;
+		}
+
+		.dropdown-menu a, .track-menu a {
+			text-decoration: none;
+		}
+
+		.dropdown-menu li {
+			width: 100%;
+			text-align: center;
+			color: #464646 !important;
+			padding: .7rem 1rem;
+			cursor: pointer;
+			text-transform: none;
+		}
+
+		.dropdown-menu li:hover {
+			background-color: #c4c4c4;
+			color: white !important;
+		}
+
+		
+
+
+
+		
+
+		
+
+
+
+		@media (max-width: 1199px) {
+			.parent-menu a {
+				font-size: 0.9rem;
+			}
+			.desktop.parent-menu .parent-menu-item {
+				margin: 0 5px 0 5px;
+			}
+		}
+
+		@media (max-width: 991px) {
+			.navbar {
+				padding: 15px 10px;
+			}
+
+			.logo-brand img {
+				width: 120px;
+			}
+
+			.user-dropdown-avatar {
+				padding-left: 0;
+				text-align: center;
+			}
+
+			.logo-brand {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+			}
+
+			.parent-menu.mobile {
+				font-size: 1rem;
+				position: fixed;
+				width: 250px;
+				height: 100%;
+				left: -250px;
+				z-index: 999;
+				background-color: white;
+				top: 0px;
+				align-items: center;
+				transition: 0.4s;
+			}
+
+			.parent-menu.mobile ul {
+				padding: 0;
+			}
+
+			.parent-menu.mobile li {
+				height: 60px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				padding: 10px 25px;
+			}
+
+			.parent-menu.mobile a {
+				color: #464646;
+			}
+
+			.parent-menu.mobile .active {
+				background-color: #c4c4c4;
+			}
+
+			.parent-menu.mobile .active a {
+				color: white;
+			}
+
+			.parent-menu.mobile a:hover {
+				text-decoration: none;
+			}
+
+			.desktop,
+			.nav-indicator {
+				display: none;
+			}
+
+			.mobile {
+				display: block;
+			}
+		}
+
+		@media (min-width:576px) {
+			#modal-signin .modal-dialog {
+				max-width: 400px;
+			}
+		}
+
+		#advisory-modal input {
+			border: none;
+			border-bottom: 1px solid #dee2e6;
+			width: 100%;
+		}
+
+		#advisory-modal input:not(:last-child) {
+			margin-bottom: 2rem;
+		}
+	
