@@ -1,0 +1,33 @@
+{box-sizing: border-box}
+.row{padding-top: 10px;
+margin:10px;}
+.picture img{
+	padding-left: 5px;
+	display: block;
+	width:200px;
+height:200px;
+	transition: height,row 2s ease;
+}
+.picture:hover img{height: 400px;
+	width: :400px;}
+.picture1 img{
+	padding-left: 210px;
+	display: block;
+	width:200px;
+height:200px;
+
+	transition: height,row 2s ease;
+}
+.picture1:hover img{height: 400px;
+	width: :400px;}
+.picture2 img{
+	padding-left: 440px;
+	display: block;
+	width:200px;
+height:200px;
+
+	opacity: 1;
+	transition: height,row 2s ease;
+}
+.picture2:hover img{height: 400px;
+	width: :400px;}
