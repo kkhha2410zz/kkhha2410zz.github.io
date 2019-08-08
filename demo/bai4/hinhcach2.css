@@ -1,0 +1,27 @@
+* {box-sizing: border-box;}
+	
+	body
+	{margin:0;
+	font-size:50px;
+	color:#ffff;}
+	.container{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 15px;
+	}
+	.box{
+		height:400px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.red{
+		background-color: red;
+	}
+	.green{
+		background-color: green;
+	}
+.blue{
+	background-color: blue;
+}

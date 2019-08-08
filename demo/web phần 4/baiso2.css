@@ -1,0 +1,15 @@
+{box-sizing: border-box;}
+.body {margin:10;}
+.picture{
+	height: 100px;
+width:100px;
+float: left;
+display: flex;
+}
+.picture2:hover{
+	height: 200px;
+	width: 200px;
+	float:center;
+	display:flex;
+	transform: translate(0;-5);
+}
