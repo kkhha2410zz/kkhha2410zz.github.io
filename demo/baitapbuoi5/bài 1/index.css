@@ -1,0 +1,36 @@
+{box-sizing: border-box;}
+
+body{font-family: Arial, Helvetica, sans-serif;
+	margin:0;
+background-color:#fff;}
+#menu {position: fixed;
+	list-style-type: none;
+
+	transition: color 2s linear;}
+	#menu:hover{color:red;}
+
+#menu > li{
+	float: left;
+	padding: 4px 25px 50px 25px;
+	text-decoration: none;}
+	
+
+#menu >li>ul{
+	display: none;
+	margin-top: 10px;
+	margin: auto;
+}
+	
+	#menu>li:hover>ul{display: block;
+					list-style-type: none;}
+.container>li{
+	width:calc( 100% / 6 - 10px);
+							float:left;
+							flex-wrap: wrap;
+							padding: 20px 30px 20px 10px;
+							margin-right:10px;
+							margin:auto;}
+							
+						/*background-color: #141329;}*/
+
+

@@ -1,0 +1,17 @@
+{box-sizing: border-box;}
+body{margin:0;
+background-color: grey;}
+#menu {list-style-type: none;
+}
+#menu > li{color: green;
+	float: left;
+	padding: 20px;
+}
+/*ban đầu ẩn menu cấp 2*/
+#menu >li>ul{
+	
+	display: none;}
+	/*khi hover thì hiện menu cấp 2*/
+	#menu>li:hover>ul{display: block;
+					list-style-type: none;}
+
