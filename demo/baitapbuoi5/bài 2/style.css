@@ -1,0 +1,17 @@
+*{box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;}
+body{margin: 0;}
+a{
+	text-decoration: none;
+}
+}
+.menu-lv1{width: 200px;
+		height:344px;}
+.menu-lv1>li{position: relative;}
+.menu-lv2{
+		position: absolute;
+		left: 200px;
+		top:0;
+		display: none;
+	}
+.menu-lv1>li:hover>.menu-lv2{display: block;}

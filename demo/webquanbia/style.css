@@ -1,0 +1,63 @@
+*{box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;}
+body{
+	margin: 0;
+	background-image: url(images.jpg);
+	background-repeat: round;
+}
+ul{
+	list-style-type: none;
+	padding: 0; 
+}
+#menu {
+	width: 100%;
+	height: 100px;
+float: left;
+text-transform: uppercase;
+background-image: white;
+}
+
+#menu>li{
+	float: left;
+	margin-right: 10px;
+	margin-top: 12px;
+	font-size: 15px;
+	position: relative;
+}
+#menu>li>a{
+	text-decoration: none;
+	border-bottom: 1px solid orange;
+	color: #7FFF00;
+	margin-right: 20px;
+	padding:25px;
+	
+}
+#menu>li>a:hover{
+	border-image:url(heineken.png) 100% / 50px / 30px round;
+	border-bottom: 20x solid white;}
+.menulv1>li>a{
+	width: 100%;
+	float: left;
+	text-decoration: none;
+	padding:15px;
+	}
+#menu>li>ul{
+width: 100%;
+float: left;
+text-decoration: none;
+padding:15px;
+display: none;
+position: relative;
+}
+#menu>li:hover>ul{
+display: block;
+position: absolute;
+}
+
+#menu>li>ul>li>a{
+	text-decoration:none;
+	border-bottom:1px solid black;
+	color: #808000;
+	margin-left: 40px;
+	font-size: 14px;
+}
