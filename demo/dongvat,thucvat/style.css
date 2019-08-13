@@ -1,0 +1,29 @@
+*{box-sizing: border-box;}
+body{
+	margin: 0;}
+ul{
+	list-style-type: none;
+	padding: 0;}
+#dongvat{
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr;}
+ div.bosat {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 200px;
+        transition: height 2s;
+    } 
+    div.bosat:hover {
+        border: 1px solid #777;
+        transform: scaleY(1.5);
+    }
+    div.bosat img {
+        width:100%;
+        height: auto;
+       }
+   
+    div.img1 {
+        padding: 10px;
+        text-align: center;
+    }
