@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h1>Danh sách học viên</h1>
+		<p id="hocvien"></p>
+		<script type="text/javascript">
+			function sapXep(array){
+				array=array.sort();
+				var string=array.join("<br>");
+				
+				return string;
+			}
+			var hv=[
+				"Anh",
+				"Tú",
+				"Tuấn",
+				"Hoàng",
+				"Tiến"
+			]
+			document.getElementById("hocvien").innerHTML=sapXep(hv);
+		</script>
+	</body>
+</html>
