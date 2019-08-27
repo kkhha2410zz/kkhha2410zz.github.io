@@ -8,19 +8,19 @@
 <script type="text/javascript">
 
 	function max(n1,n2) {
-		if (typeof n1 == "number" &&
-			typeof n2 == "number") { 
-			document.write("2 giá trị là số ");
+		if (typeof n1 != "number" &&
+			typeof n2 != "number") { 
+			return 'tham số truyền vào không hợp lệ ';
 	}
-else {document.write("không phải số");
+else {return 'là số';
 }
    if (n1 > n2)
   {
-  document.write("số lớn nhất là:" +n1);
+  return("số lớn nhất là:" +n1);
 }
    else
   {
-   document.write("số lớn nhất là:" +n2);
+   return("số lớn nhất là:" +n2);
 }
 }
 

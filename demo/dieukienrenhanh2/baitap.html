@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Baitap</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<p> "Bây giờ là : </p>
+	<p id="Bai1"> </p>
+<script type="text/javascript">
+	//bai 1//
+	var now = new Date();
+	document.write("Bai1").innerHTML= now.getHours() + now.getMinutes() + now.getSeconds();
+
+	var date= now.getDate();
+	document.write ("Bai1").innerHTML=date.getDate();
+	var month= now.getMonth() +1;
+	document.write("Bai1").innerHTML=month.getMonth();
+	var year= now.FullYear();
+	document.write("Bai1").innerHTML=year.getFullYear();
+
+	document.write();
+
+
+//bai2//
+function point(x) {
+	for (var i = 0; i>=0 && i<=10; i++) {
+		document("điểm số là:")
+	}
+	if (x >= 8.5 ){
+		kq="Điểm A"
+	}
+	else if (x >= 7 && x < 8.5){
+		kq="Điểm B"
+	}
+	else if (x >= 5.5 && x < 7){
+		kq="Điểm C"
+	}
+	else if (x >= 4 && x < 5.5){
+		kq="Điểm D"
+	}
+	else {kq="Điểm F"}
+}
+
+</script>
+</body>
+</html>
