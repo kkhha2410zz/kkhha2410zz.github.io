@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>baitapDocumentOM</title>
+</head>
+<body>
+	<div class="box">
+	<h1> Giá xăng đồng loạt tăng mạnh ngày 10/9</h1>
+	<h2>Giá xăng dầu thế giới tiếp tục đà tăng do kỳ vọng Saudi Arabia sẽ tiếp tục tuân thủ kế hoạch cắt giảm sản lượng của Tổ chức Các nước xuất khẩu dầu mỏ (OPEC).
+	</h2>
+	<p id="p1"> <b>Giá xăng dầu thế giới tăng</b>
+	</p>
+	<p id="p2"><Đầu giờ sáng nay (giờ Việt Nam), giá dầu Brent tăng 1,3 USD tương đương 2,3% lên 62,6 USD/thùng. Cùng lúc, giá dầu WTI tăng 2,2% lên 57,85 USD/thùng.
+	</p>
+	<p id="p3">Kết thúc phiên giao dịch ngày hôm qua (9/9), giá dầu thô tăng 2% sau khi tân Bộ trưởng Năng lượng của Arab Saudi ông Abdulaziz bin Salman cho biết ông sẽ duy trì chính sách hạn chế sản lượng dầu thô nhằm hỗ trợ giá dầu.
+	</p>
+	<button type="button" onclick="changeColor()">ChangeColor</button>
+     <button type="button" onclick="changeBgColor('grey')">changeBgColor(green)</button>
+	</div>
+	<script type="text/javascript">
+//b1 function changeColor(): Đổi màu chữ của 3 đoạn văn theo thứ tự xanh, vàng, đỏ.//
+function changeColor(){
+	var p1 = document.getElementById("p1").style.color= "blue";
+	var p2 = document.getElementsById("p2").style.color= "yellow";
+	var p3 = document.getElementsById("p3").style.color= "red";
+}
+//b2 function changeBgColor(color): Thay đổi màu nền của trang thành màu color.//
+function changeBgColor(color){
+	document.body.style.background=color;
+}
+
+// 20px thành 21px//
+
+
+
+</script>
+</body>
+</html>

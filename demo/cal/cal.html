@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+	<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="cal.css">
+</head>
+<body>
+		<div class="container">
+		<h1>Calculator</h1>
+		<div class="output">
+			<p id="output1">0</p>
+			<p id="output2">0</p>
+		</div>
+		<div class="row">
+			<button onclick="percent()" class="button" id="percent">%</button>
+			<button onclick="radic()" class="button" id="radic">&#8730;</button>
+			<button onclick="permissionTwo()" class="button" id="permission2">x<sup>2</sup></button>
+			<button onclick="onePartX()" class="button" id="1partX">1/x</button>
+		</div>
+		<div class="row">
+			<button onclick="clearEntry()" class="button" id="clearEntry">CE</button>
+			<button onclick="clearAll()" class="button" id="clear">C</button>
+			<button onclick="clearEntryOneChar()" class="button" id="clearEntryOneChar">&#10502;</button>
+			<button onclick="divide()" class="button" id="divide">&#247;</button>
+		</div>
+		<div class="row">
+			<button onclick="addNumber(this)" class="button number" id="seven">7</button>
+			<button onclick="addNumber(this)" class="button number" id="eight">8</button>
+			<button onclick="addNumber(this)" class="button number" id="nine">9</button>
+			<button onclick="multiply()" class="button" id="multiply">&#215;</button>
+		</div>
+		<div class="row">
+			<button onclick="addNumber(this)" class="button number" id="four">4</button>
+			<button onclick="addNumber(this)" class="button number" id="five">5</button>
+			<button onclick="addNumber(this)" class="button number" id="six">6</button>
+			<button onclick="subtraction()" class="button" id="subtraction">-</button>
+		</div>
+		<div class="row">
+			<button onclick="addNumber(this)" class="button number" id="one">1</button>
+			<button onclick="addNumber(this)" class="button number" id="two">2</button>
+			<button onclick="addNumber(this)" class="button number" id="three">3</button>
+			<button onclick="summation()" class="button" id="summation">+</button>
+		</div>
+		<div class="row">
+			<button onclick="plusmn()" class="button" id="plusmn">&#177;</button>
+			<button onclick="addZero(this)" class="button number" id="zero">0</button>
+			<button onclick="addComma()" class="button" id="comma">&#44;</button>
+			<button onclick="equal()" class="button" id="equal">=</button>
+		</div>
+	</div>
+<script type="text/javascript" src="cal.js">
+</script>
+</body>
+</html>
